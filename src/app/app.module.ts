@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpService } from './http.service';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
